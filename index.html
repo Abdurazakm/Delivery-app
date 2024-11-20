@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Delivery App</h1>
+  </header>
+
+  <div class="container">
+    <div class="grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$10.00</p>
+        <button class="add-to-cart" data-name="Product 1" data-price="10" data-image="https://via.placeholder.com/150">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>$15.00</p>
+        <button class="add-to-cart" data-name="Product 2" data-price="15" data-image="https://via.placeholder.com/150">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p>Total: <span id="cart-total">$0.00</span></p>
+      <button id="clear-cart">Clear Cart</button>
+      <button id="view-cart"><a href="checkout.html">Proceed to Checkout</a></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
